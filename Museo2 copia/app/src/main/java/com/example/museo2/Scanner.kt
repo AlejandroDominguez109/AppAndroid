@@ -20,6 +20,9 @@ class Scanner : AppCompatActivity() {
         binding = ActivityScannerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val bundle:Bundle? = intent.extras
+        val email:String? = bundle?.getString("email")
+
 
         //llamada metodo escaner nada mas iniciar activity
         escaner()
@@ -27,8 +30,15 @@ class Scanner : AppCompatActivity() {
         binding.BotonEnlace.setOnClickListener {
             abrirEnlace()
         }
+        binding.likeBoton.setOnClickListener{
+            añadirEscaner()
+        }
 
 
+    }
+
+    private fun añadirEscaner() {
+        binding.likeBoton.setBackgroundResource(R.drawable.ic_favorite_red)
     }
 
     private fun abrirEnlace() {
@@ -97,25 +107,37 @@ class Scanner : AppCompatActivity() {
     }
 
     private fun abrirPerfil() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, Perfil::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirTours() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, Tours::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirCat() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, MainActivity2::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirHome() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, MenuPrincipal::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }

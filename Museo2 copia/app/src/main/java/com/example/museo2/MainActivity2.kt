@@ -21,6 +21,10 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val bundle:Bundle? = intent.extras
+        val email:String? = bundle?.getString("email")
+
+
         initRecycledView()
 
     }
@@ -66,25 +70,37 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     private fun abrirPerfil() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, Perfil::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirTours() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, Tours::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirHome() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, MenuPrincipal::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirEscaner() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, Scanner::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }

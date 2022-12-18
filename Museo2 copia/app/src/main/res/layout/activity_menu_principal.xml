@@ -22,20 +22,21 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="135dp"
+                android:layout_marginStart="100dp"
                 android:text="Bienvenido"
                 android:textColor="@android:color/tertiary_text_light"
                 android:textColorHint="@android:color/tertiary_text_light" />
 
             <TextView
                 android:id="@+id/nombre"
-                android:layout_width="36dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="19dp"
                 android:text="email"
@@ -47,7 +48,7 @@
             android:id="@+id/botonQR"
             android:layout_width="208dp"
             android:layout_height="108dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="70dp"
             android:layout_gravity="center_horizontal"
             android:text="QR"
             android:textSize="15sp"
@@ -57,7 +58,8 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
 
             <Button
                 android:id="@+id/botonTours"
@@ -65,7 +67,7 @@
                 android:layout_height="108dp"
                 android:layout_below="@id/botonQR"
                 android:layout_marginTop="64dp"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
                 android:text="Tours"
                 android:textSize="15sp"
                 app:icon="@drawable/ic_tour"

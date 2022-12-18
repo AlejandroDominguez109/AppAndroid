@@ -37,5 +37,24 @@
             android:layout_marginTop="84dp"
             android:text="Abrir enlace"
             android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añade a favoritos este contenido"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"/>
+
+        <ImageButton
+            android:id="@+id/like_boton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_favorite_white"/>
+
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

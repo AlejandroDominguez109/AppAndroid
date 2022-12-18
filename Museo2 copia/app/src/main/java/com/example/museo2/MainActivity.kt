@@ -7,12 +7,16 @@ import androidx.appcompat.app.AlertDialog
 import com.example.museo2.databinding.ActivityMainBinding
 import com.example.museo2.databinding.ActivityMenuPrincipalBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+
+    private val db = FirebaseFirestore.getInstance()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, contraseña)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
+                    //mail=email.toString()
                     abrir(email)
                 } else {
                     showAlert()
@@ -59,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, contraseña)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
+                    db.collection("users").document(email)
                     abrir(email)
                 } else {
                     showAlert()

@@ -10,6 +10,10 @@ class Tours : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tours)
+
+        val bundle:Bundle? = intent.extras
+        val email:String? = bundle?.getString("email")
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -41,25 +45,37 @@ class Tours : AppCompatActivity() {
     }
 
     private fun abrirPerfil() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, Perfil::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirHome() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, MenuPrincipal::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirCat() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, MainActivity2::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }
 
     private fun abrirEscaner() {
+        val mail = intent.getStringExtra("email")
+
         val homeIntent = Intent(this, Scanner::class.java).apply {
+            putExtra("email", mail)
         }
         startActivity(homeIntent)
     }

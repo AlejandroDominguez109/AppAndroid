@@ -22,7 +22,7 @@
 
         <EditText
             android:id="@+id/Email"
-            android:layout_width="wrap_content"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="101dp"
             android:layout_marginTop="120dp"
@@ -31,26 +31,22 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:textColor="@android:color/tertiary_text_light"
+            android:textColor="@android:color/white"
             android:textColorHint="@android:color/tertiary_text_light" />
 
         <EditText
             android:id="@+id/Contraseña"
-            android:layout_width="wrap_content"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="101dp"
             android:layout_marginTop="52dp"
-            android:layout_marginEnd="101dp"
             android:background="@drawable/bg_text"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColor="@android:color/tertiary_text_light"
-            android:textColorHint="@android:color/tertiary_text_light"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Email" />
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/tertiary_text_light" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,7 +65,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="65dp"
                 android:layout_marginTop="68dp"
-                android:layout_marginEnd="63dp"
                 android:text="Acceder" />
         </LinearLayout>
     </LinearLayout>

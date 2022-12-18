@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <ImageView
@@ -10,14 +10,27 @@
         android:layout_height="200dp"
         android:layout_marginTop="5dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/idArticulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        android:textColor="@android:color/tertiary_text_light"
-        android:textColorHint="@android:color/tertiary_text_light"/>
+        <TextView
+            android:id="@+id/idArticulo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textColorHint="@android:color/tertiary_text_light"/>
+
+        <ImageButton
+            android:id="@+id/fav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/ic_favorite_white"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

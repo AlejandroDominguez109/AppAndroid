@@ -12,12 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/foto"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@drawable/ic_foto_perfil_ini"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornersSize"
             android:layout_marginStart="45dp"
             android:layout_marginTop="20dp"/>
 
