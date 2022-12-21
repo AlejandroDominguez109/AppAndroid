@@ -24,7 +24,7 @@
             android:id="@+id/enlaceEscaner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="100dp"
             android:autoLink="all"
             android:text="Enlace...."
             android:textColor="@color/white"
@@ -34,8 +34,15 @@
             android:id="@+id/BotonEnlace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="40dp"
             android:text="Abrir enlace"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/AbrirScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Escanear      "
             android:layout_gravity="center_horizontal"/>
 
         <TextView
@@ -48,11 +55,11 @@
 
         <ImageButton
             android:id="@+id/like_boton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:background="@drawable/ic_favorite_white"/>
+            android:background="@drawable/ic_favorite_white" />
 
 
 

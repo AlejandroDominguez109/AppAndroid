@@ -27,6 +27,7 @@ class MainActivity2 : AppCompatActivity() {
 
         initRecycledView()
 
+
     }
 
     fun initRecycledView(){
@@ -40,6 +41,7 @@ class MainActivity2 : AppCompatActivity() {
 
 
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu,menu)

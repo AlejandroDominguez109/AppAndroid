@@ -17,7 +17,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:videoId="lsAeTXNQyIA"
-        app:autoPlay="false">
+        app:autoPlay="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
     </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
     <LinearLayout
@@ -28,17 +31,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:text="@string/titulo1"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:videoId="lsAeTXNQyIA"
-        app:autoPlay="false">
+        app:videoId="n8Yo-wD-QTo"
+        app:autoPlay="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
     </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
     <LinearLayout
@@ -50,16 +57,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:text="@string/titulo1"
-            android:textColor="@color/white"/>
+            android:layout_marginBottom="5dp"
+            android:text="@string/titulo2"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:videoId="lsAeTXNQyIA"
-        app:autoPlay="false">
+        app:videoId="ZU-IVshCAss"
+        app:autoPlay="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
     </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
     <LinearLayout
@@ -70,16 +81,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:text="@string/titulo1"
-            android:textColor="@color/white"/>
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/titulo3"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
     </LinearLayout>
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:videoId="lsAeTXNQyIA"
-        app:autoPlay="false">
+        app:autoPlay="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
     </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
     <LinearLayout
@@ -90,9 +105,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:text="@string/titulo1"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
 

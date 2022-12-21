@@ -18,6 +18,7 @@ import com.example.museo2.fragmet.articulos_frag
 import com.example.museo2.fragmet.escaners
 import com.example.museo2.fragmet.videos
 import com.google.android.gms.common.util.Base64Utils.decode
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import java.io.ByteArrayOutputStream
 import java.lang.Byte.decode
@@ -56,6 +57,17 @@ class Perfil : AppCompatActivity() {
         binding.cambiarFoto.setOnClickListener{
             tomarfoto()
         }
+        binding.cerrar.setOnClickListener {
+            cerrar()
+        }
+
+    }
+
+    private fun cerrar() {
+        FirebaseAuth.getInstance().signOut()
+        val homeIntent = Intent(this, MainActivity::class.java).apply {
+        }
+        startActivity(homeIntent)
 
     }
 

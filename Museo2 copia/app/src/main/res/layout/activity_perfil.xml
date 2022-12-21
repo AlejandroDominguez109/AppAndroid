@@ -10,7 +10,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/foto"
@@ -21,7 +22,7 @@
             android:layout_marginTop="20dp"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -30,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:layout_marginStart="110dp"
+                android:layout_marginStart="20dp"
                 android:text="Nombre"
                 android:textColor="@color/white"/>
 
@@ -38,14 +39,26 @@
                 android:id="@+id/cambiarFoto"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="20dp"
                 android:background="@android:color/transparent"
                 android:text="editar foto"
                 android:textColor="@color/white"
                 android:textSize="10dp"
                 app:icon="@drawable/ic_edit" />
-
         </LinearLayout>
+
+        <Button
+            android:id="@+id/cerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="2dp"
+            android:text="cerrar sesion"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginTop="35dp"
+            app:icon="@drawable/ic_baseline_logout_24"/>
+
 
     </LinearLayout>
 

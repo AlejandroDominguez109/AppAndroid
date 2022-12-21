@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">VirtualMuseum</string>
     <string name="titulo1">La historia y la evolución de los ordenadores</string>
+    <string name="titulo2">Primer lenguaje de programación de alto nivel</string>
+    <string name="titulo3">El primer ordenador comercial</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_escaners" />

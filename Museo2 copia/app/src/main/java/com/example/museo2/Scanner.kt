@@ -33,6 +33,9 @@ class Scanner : AppCompatActivity() {
         binding.likeBoton.setOnClickListener{
             añadirEscaner()
         }
+        binding.AbrirScanner.setOnClickListener {
+            escaner()
+        }
 
 
     }
@@ -44,7 +47,7 @@ class Scanner : AppCompatActivity() {
     private fun abrirEnlace() {
         //intent.setData(Uri.parse(binding.enlaceEscaner.text.toString()))
         //startActivity(intent)
-        if(binding.enlaceEscaner.text.toString().isEmpty()){
+        if(binding.enlaceEscaner.text.toString().equals("")){
             Toast.makeText(this, "No hay ningun enlace escaneado" , Toast.LENGTH_LONG).show()
         }else{
             val intent = Intent(Intent.ACTION_VIEW)
