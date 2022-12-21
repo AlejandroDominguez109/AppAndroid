@@ -12,8 +12,8 @@ En un primer instante, utilizamos los codelabs para poder entender como funciona
 Problemas que nos hemos ido encontrando:
   - Utilizacion de firebase.
   - Acceso del Scanner a la camara.
-  - Utilizacion de fragmentos e interaccion con los botones -> utilizamos la libreria https://github.com/PierfrancescoSoffritti/android-youtube-player
+  - Utilizacion de fragmentos e interaccion con los botones 
   - Creacion del perfil de usuario.
-  - Introduccion de videos de youtube a la aplicacion. 
-  - Subir imagen de perfil a firestore-> probelma al convertir el bitmap a string por usar sdk 19.
+  - Introduccion de videos de youtube a la aplicacion -> utilizamos la libreria https://github.com/PierfrancescoSoffritti/android-youtube-player
+  - Subir imagen de perfil a firestore -> probelma al convertir el bitmap a string por usar sdk 19.
  
