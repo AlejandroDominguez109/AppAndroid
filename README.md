@@ -16,4 +16,6 @@ Problemas que nos hemos ido encontrando:
   - Creacion del perfil de usuario.
   - Introduccion de videos de youtube a la aplicacion -> utilizamos la libreria https://github.com/PierfrancescoSoffritti/android-youtube-player
   - Subir imagen de perfil a firestore -> probelma al convertir el bitmap a string por usar sdk 19.
+  
+En el repositorio tenemos subido un .zip con el proyecto otra vez. Esto se debe a que nos dio un fallo git y se duplicaron algunos archivos y por tanto no se podia ejecutar. En caso de no funcionar el proyecto, aunque esta probado y deberia funcionar, el .zip contiene el proyecto tambien.
  
