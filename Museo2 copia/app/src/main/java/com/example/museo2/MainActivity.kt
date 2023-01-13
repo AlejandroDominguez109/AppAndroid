@@ -45,14 +45,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //binding.button4.setOnClickListener { abrir() }
     }
 
     private fun loginUser(email: String, contraseña: String) {
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, contraseña)
             .addOnCompleteListener {
-                if (it.isSuccessful) {
-                    //mail=email.toString()
+                if (it.isSuccessful){
                     abrir(email)
                 } else {
                     showAlert()

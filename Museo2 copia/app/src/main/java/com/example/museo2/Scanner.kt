@@ -45,8 +45,7 @@ class Scanner : AppCompatActivity() {
     }
 
     private fun abrirEnlace() {
-        //intent.setData(Uri.parse(binding.enlaceEscaner.text.toString()))
-        //startActivity(intent)
+
         if(binding.enlaceEscaner.text.toString().equals("")){
             Toast.makeText(this, "No hay ningun enlace escaneado" , Toast.LENGTH_LONG).show()
         }else{
@@ -55,7 +54,6 @@ class Scanner : AppCompatActivity() {
             startActivity(intent)
 
         }
-
     }
 
     private fun escaner(){
